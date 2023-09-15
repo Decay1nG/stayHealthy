@@ -1,27 +1,77 @@
 .header__container {
-  color: white;
-  margin: 0 11.25rem;
-  //background-color: black;
+  max-width: 111rem;
+  margin: 0 auto;
+  padding-top: 1.8rem;
+  height: 5.2rem;
 }
 
-header {
-  background-color: #161D2F;
+.header__navigation, .header__container {
+  @include between;
 }
 
-.header__menu, .header__navigation, .header__container {
-  display: flex;
+.header__navigation--item {
+  @include underScale;
 }
-
-.header__logotype {margin-right: 10rem}
-
-
-.header__container {
-  height: 3rem;
-  align-items: center;
-}
-
 
 .header__navigation {
-
-
+  width: 35.3rem;
 }
+
+.header__navigation {
+  font-size: 1.4rem;
+  font-family: "Nekst-Thin";
+  font-weight: 300;
+  line-height: 150%;
+}
+
+@include tablet {
+  .header__container {
+    margin: 0 4rem;
+  }
+}
+
+@include mini-tablet {
+  .header__navigation {
+    display: block;
+    background-color: rgb(53, 53, 53);
+    position: absolute;
+    top: -20rem;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 200px 0;
+    font-family: Nekst-Medium;
+    font-size: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .8s, opacity .6s, visibility .8s;
+  };
+  .header__button {display: none};
+  .burger__menu {display: block}
+
+  .header__container {
+    margin: 0 7rem;
+  }
+}
+
+.header__navigation--active {
+  display: block;
+  background-color: rgb(53, 53, 53);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 200px 0;
+  font-family: Nekst-Medium;
+  font-size: 20px;
+  opacity: 1;
+  visibility: visible;
+  transition: top .5s, opacity .5s, visibility .5s;
+}
+
+

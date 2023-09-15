@@ -1,27 +1,177 @@
-.header__container {
-  color: white;
-  margin: 0 11.25rem;
+.burger__menu {
+  display: none;
 }
 
-header {
+html {
   background-color: #161D2F;
+  color: white;
 }
 
-.header__menu, .header__navigation, .header__container {
-  display: flex;
+.button {
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "Nekst-Medium";
+  line-height: normal;
+  text-transform: capitalize;
+  padding: 1.3rem 3.7rem;
+  border-radius: 28px;
+  background: linear-gradient(97deg, #3043A9 11.99%, #1F629F 96.6%);
+  box-shadow: 0 0 0px 0px #42c0ed;
+  transition: box-shadow 0.31s;
 }
-
-.header__logotype {
-  margin-right: 10rem;
+.button:hover {
+  box-shadow: 0 0 9px 4px #42c0ed;
+  transition: background, 0.21s;
 }
 
 .header__container {
-  height: 3rem;
+  max-width: 111rem;
+  margin: 0 auto;
+  padding-top: 1.8rem;
+  height: 5.2rem;
+}
+
+.header__navigation, .header__container {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.main {
-  font-size: 2rem;
+.header__navigation--item {
+  position: relative;
+}
+.header__navigation--item::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: white;
+  bottom: 0;
+  border-radius: 2px;
+  transition: all 0.2s ease-out;
+}
+.header__navigation--item:hover::before {
+  width: 100%;
+  transition: all 0.2s ease-out;
+}
+
+.header__navigation {
+  width: 35.3rem;
+}
+
+.header__navigation {
+  font-size: 1.4rem;
+  font-family: "Nekst-Thin";
+  font-weight: 300;
+  line-height: 150%;
+}
+
+@media (max-width: 1024px) {
+  .header__container {
+    margin: 0 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .header__navigation {
+    display: block;
+    background-color: rgb(53, 53, 53);
+    position: absolute;
+    top: -20rem;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 200px 0;
+    font-family: Nekst-Medium;
+    font-size: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.8s, opacity 0.6s, visibility 0.8s;
+  }
+  .header__button {
+    display: none;
+  }
+  .burger__menu {
+    display: block;
+  }
+  .header__container {
+    margin: 0 7rem;
+  }
+}
+.header__navigation--active {
+  display: block;
+  background-color: rgb(53, 53, 53);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 200px 0;
+  font-family: Nekst-Medium;
+  font-size: 20px;
+  opacity: 1;
+  visibility: visible;
+  transition: top 0.5s, opacity 0.5s, visibility 0.5s;
+}
+
+.burger__menu {
+  --s: 4rem; /* control the size */
+  --c: white; /* the color */
+  height: var(--s);
+  aspect-ratio: 1;
+  border: none;
+  padding: 0;
+  border-inline: calc(var(--s) / 2) solid rgba(0, 0, 0, 0);
+  box-sizing: content-box;
+  --_g1: linear-gradient(var(--c) 20%,#0000 0 80%,var(--c) 0)
+  no-repeat content-box border-box;
+  --_g2: radial-gradient(circle closest-side at 50% 12.5%,var(--c) 95%,#0000)
+  repeat-y content-box border-box;
+  background: var(--_g2) left var(--_p, 0px) top, var(--_g1) left calc(var(--s) / 10 + var(--_p, 0px)) top, var(--_g2) right var(--_p, 0px) top, var(--_g1) right calc(var(--s) / 10 + var(--_p, 0px)) top;
+  background-size: 20% 80%, 40% 100%;
+  position: relative;
+  clip-path: inset(0 25%);
+  -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 0), #000 25% 75%, rgba(0, 0, 0, 0));
+  cursor: pointer;
+  transition: background-position 0.3s var(--_s, 0.3s), clip-path 0s var(--_s, 0.6s);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.burger__menu:before,
+.burger__menu:after {
+  content: "";
+  position: absolute;
+  border-radius: var(--s);
+  inset: 40% 0;
+  background: var(--c);
+  transition: transform 0.3s calc(0.3s - var(--_s, 0.3s));
+}
+
+.burger__menu:checked {
+  clip-path: inset(0);
+  --_p: calc(-1*var(--s));
+  --_s: 0s;
+}
+
+.burger__menu:checked:before {
+  transform: rotate(45deg);
+}
+
+.burger__menu:checked:after {
+  transform: rotate(-45deg);
+}
+
+.burger__menu:focus-visible {
+  clip-path: none;
+  -webkit-mask: none;
+  border: none;
+  outline: 2px solid var(--c);
+  outline-offset: 5px;
 }
 
 html {
@@ -39,17 +189,17 @@ html {
 }
 @media (max-width: 768px) {
   html {
-    font-size: 1.3020833333vw;
+    font-size: 1.0416666667vw;
   }
 }
 @media (max-width: 576px) {
   html {
-    font-size: 1.7361111111vw;
+    font-size: 1.3888888889vw;
   }
 }
 @media (max-width: 420px) {
   html {
-    font-size: 2.380952381vw;
+    font-size: 1.9047619048vw;
   }
 }
 
