@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
     <title>Title</title>
 </head>
@@ -30,17 +31,25 @@
     </header>
     <main>
         <section class="hero__section">
-            <div class="container">
-                <p>WELCOME TO THE CLUB</p>
-                <h1 class="hero__section--title">Choose Your Programs, Pick Your Meal, Let’s Get Healthy.</h1>
-                <h2 class="hero__section--description">StayHealty provides Online Training, and Consultation About Diet and Exercise tailored based on user needs. We will provide a training model that can be accessed anytime and anywhere with the best trainers.</h2>
-                <div class="hero__btn-box">
-                    <a href="" class="button">join now</a>
-                    <a href="" class="button__empty">contact us</a>
+            <div class="header__container">
+                <div class="hero__section--inner">
+                    <p class="hero__undertitle">WELCOME TO THE CLUB</p>
+                    <h1 class="hero__section--title">Choose Your Programs, Pick Your Meal, <br> Let’s Get Healthy.</h1>
+                    <p class="hero__section--description">StayHealty provides Online Training, and Consultation About Diet and Exercise tailored based on user needs. We will provide a training model that can be accessed anytime and anywhere with the best trainers.</p>
+                    <div class="hero__btn-box">
+                        <a href="" class="button">join now</a>
+                        <a href="" class="button__empty">contact us</a>
+                    </div>
+
+                    <video class="video-js" id="video-1" controls preload="auto" poster="/resources/pictures/header/pexels-mart-production-8033013%201.png">
+                        <source src="resources/video/очень%20важно.mp4">
+                    </video>
                 </div>
             </div>
         </section>
     </main>
+    <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
+
 </html>

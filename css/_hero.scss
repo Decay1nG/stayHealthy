@@ -1,0 +1,137 @@
+.hero__undertitle {
+  color: #FFF;
+  font-family: Nekst-SemiBold;
+  font-size: 1.4rem;
+}
+
+.hero__section--title {
+  color: #FFF;
+  margin: 1rem 0 2rem 0;
+  font-family: Nekst-Bold;
+  font-size: 6.2rem;
+  line-height: 150%;
+  width: 70rem;
+}
+
+.hero__section--description {
+  color: #FFF;
+  width: 70rem;
+  font-family: Nekst-Medium;
+  font-size: 1.5rem;
+  line-height: 200%;
+  text-transform: capitalize;
+}
+
+.hero__section--inner {
+  width: 100%;
+  @include center;
+  flex-direction: column;
+}
+
+.hero__section {
+  padding: 6.7rem 0;
+  p, h1 {
+    text-align: center;
+    font-style: normal;
+  }
+}
+
+.hero__btn-box {
+  margin: 3rem 0;
+  width: 33rem;
+  @include between
+}
+
+.vjs-icon-placeholder {
+  display: none;
+}
+
+.video-js .vjs-big-play-button {
+  width: 8.3rem;
+  height: 8.3rem;
+  background: #000000 url("../resources/pictures/header/play.svg") no-repeat center ;
+  border-radius: 100px;
+  border: none;
+
+  &:hover {
+    background: #000000 url("../resources/pictures/header/play.svg") no-repeat center ;
+  }
+}
+.video-js {
+  max-width: 111rem;
+  max-height: 60rem;
+  border-radius: 10px;
+  &:hover {
+    .vjs-big-play-button {
+      background: #000000 url("../resources/pictures/header/play.svg") no-repeat center center;
+    }
+
+  }
+}
+
+@include tablet {
+  .video-js {
+    max-width: 74rem;
+    max-height: 40rem;
+  }
+
+  .video-js .vjs-big-play-button {
+    margin-left: 0;
+    left: 45%;
+  }
+}
+
+@include mobile {
+  .video-js {
+    max-width: 56rem;
+    max-height: 30rem;
+  }
+
+  .video-js .vjs-big-play-button {
+    left: 42%;
+  }
+
+  .hero__section--title {
+    font-size: 5.2rem;
+    line-height: 130%;
+    width: 60rem;
+  }
+
+  .hero__section--description {
+    width: 60rem;
+    font-size: 1.2rem;
+    line-height: 180%;
+  }
+
+  .hero__btn-box {
+    width: 32rem;
+  }
+}
+
+@include mini-mobile {
+  .hero__section--description {
+    width: 47rem;
+    font-size: 1.2rem;
+    line-height: 170%;
+  }
+
+  .hero__section--title {
+    font-size: 4.2rem;
+    line-height: 125%;
+    width: 47rem;
+  }
+
+  .video-js {
+    max-width: 46rem;
+    max-height: 25rem;
+  }
+
+  .video-js .vjs-big-play-button {
+    left: 40.5%;
+  }
+
+  .header__container {
+    margin: 0 3rem;
+  }
+
+}

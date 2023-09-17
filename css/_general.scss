@@ -35,21 +35,50 @@ html {
   color: white;
 }
 
-.button {
+.button__empty, .button {
   text-align: center;
   font-size: 1.8rem;
-  font-family: "Nekst-Medium";
+  font-family: "Nekst-SemiBold";
   line-height: normal;
   text-transform: capitalize;
-  padding: 1.3rem 3.7rem;
   border-radius: 28px;
+}
+
+.button {
+  padding: 1.3rem 3.7rem;
   background: linear-gradient(97deg, #3043A9 11.99%, #1F629F 96.6%);
   box-shadow: 0 0 0px 0px #42c0ed;
-
   transition: box-shadow .31s;
-
   &:hover {
     box-shadow: 0 0 9px 4px #42c0ed;
     transition: background, .21s;
   }
+}
+
+.button__empty {
+  padding: 1.2rem 2.7rem;
+  border: 1px solid #fff;
+  transition: all .21s;
+  &:hover {
+    box-shadow: 0 0 9px 1px #fff;
+    background-color: #FFFFFF;
+    color: #161D2F;
+    transition: all .21s;
+  }
+}
+
+header {
+  height: fit-content;
+  padding: 1.8rem 0;
+}
+
+
+.header__container {
+  max-width: 111rem;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
 }

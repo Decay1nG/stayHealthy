@@ -3,6 +3,7 @@
   --c: white; /* the color */
 
   height: var(--s);
+  z-index: 10;
   aspect-ratio: 1;
   border: none;
   padding: 0;
