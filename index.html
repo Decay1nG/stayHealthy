@@ -4,53 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css"/>
     <link rel="stylesheet" href="css/fonts.css">
+
     <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="css/style.css">
     <title>Title</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__container">
-            <div class="header__logotype">
-                <a href=""><img src="../arokenStudy/resources/pictures/header/StayHealthy.svg" alt=""></a>
-            </div>
-            <nav>
-                <ul class="header__navigation navigation">
-                    <li class="header__navigation--item"><a href="">Home</a></li>
-                    <li class="header__navigation--item"><a href="">Program</a></li>
-                    <li class="header__navigation--item"><a href="">Nutritions</a></li>
-                    <li class="header__navigation--item"><a href="">Pricing</a></li>
-                    <li class="header__navigation--item"><a href="">About</a></li>
-                </ul>
-            </nav>
-            <a href="" class="header__button button">Join Now</a>
-            <input type="checkbox" role="button" aria-label="Display the menu" class="burger__menu">
-        </div>
-    </header>
+<!--    <header class="header">-->
+<!--        <div class="header__container">-->
+<!--            <div class="header__logotype">-->
+<!--                <a href=""><img src="../arokenStudy/resources/pictures/header/StayHealthy.svg" alt=""></a>-->
+<!--            </div>-->
+<!--            <nav>-->
+<!--                <ul class="header__navigation navigation">-->
+<!--                    <li class="header__navigation&#45;&#45;item"><a href="">Home</a></li>-->
+<!--                    <li class="header__navigation&#45;&#45;item"><a href="">Program</a></li>-->
+<!--                    <li class="header__navigation&#45;&#45;item"><a href="">Nutritions</a></li>-->
+<!--                    <li class="header__navigation&#45;&#45;item"><a href="">Pricing</a></li>-->
+<!--                    <li class="header__navigation&#45;&#45;item"><a href="">About</a></li>-->
+<!--                </ul>-->
+<!--            </nav>-->
+<!--            <a href="" class="header__button button">Join Now</a>-->
+<!--            <input type="checkbox" role="button" aria-label="Display the menu" class="burger__menu">-->
+<!--        </div>-->
+<!--    </header>-->
     <main>
-        <section class="hero__section">
-            <div class="header__container">
-                <div class="hero__section--inner">
-                    <p class="hero__undertitle">WELCOME TO THE CLUB</p>
-                    <h1 class="hero__section--title">Choose Your Programs, Pick Your Meal, <br> Let’s Get Healthy.</h1>
-                    <p class="hero__section--description">StayHealty provides Online Training, and Consultation About Diet and Exercise tailored based on user needs. We will provide a training model that can be accessed anytime and anywhere with the best trainers.</p>
-                    <div class="hero__btn-box">
-                        <a href="" class="button">join now</a>
-                        <a href="" class="button__empty">contact us</a>
+<!--        <section class="hero__section">-->
+<!--            <div class="header__container">-->
+<!--                <div class="hero__section&#45;&#45;inner">-->
+<!--                    <p class="hero__undertitle">WELCOME TO THE CLUB</p>-->
+<!--                    <h1 class="hero__section&#45;&#45;title">Choose Your Programs, Pick Your Meal, <br> Let’s Get Healthy.</h1>-->
+<!--                    <p class="hero__section&#45;&#45;description">StayHealty provides Online Training, and Consultation About Diet and Exercise tailored based on user needs. We will provide a training model that can be accessed anytime and anywhere with the best trainers.</p>-->
+<!--                    <div class="hero__btn-box">-->
+<!--                        <a href="" class="button">join now</a>-->
+<!--                        <a href="" class="button__empty">contact us</a>-->
+<!--                    </div>-->
+<!--                    <video class="video-js" id="video-1" controls preload="auto" poster="/resources/pictures/header/pexels-mart-production-8033013%201.png">-->
+<!--                        <source src="resources/video/очень%20важно.mp4">-->
+<!--                    </video>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+        <section class="program">
+            <div class="container">
+                <div class="services__inner">
+                    <h2 class="program__title">PROGRAMS</h2>
+                    <p class="program__description">We Have a programs to help your workouts</p>
+                    <div class="swiper program__slider--container">
+                        <div class="swiper-wrapper program__slider--list">
+                            <div class="swiper-slide program__slider--card">
+                                <div class="program__card--img"><img src="resources/pictures/program/pexels-mart-production-8033089%201.png"></div>
+                                <div class="program__card--title">Full Body Workout</div>
+                                <div class="program__card--author">By The Rock</div>
+                                <div class="program__card--description">You can do it in your own home, all in under 30 mins? just need a mat and som . . .</div>
+                                <a class="program__card--link" href="https://youtu.be/9kCzsi-VP3s?si=3gtawXuck4paREV-">
+                                    <p>Check out this program!</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M-0.000213134 10.8333L14.6548 10.8333L10.2439 15.2442L11.4223 16.4225L17.8448 9.99999L11.4223 3.57749L10.2439 4.75582L14.6548 9.16665L-0.000212989 9.16665L-0.000213134 10.8333Z" fill="#3043A9"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="swiper-slide program__slider--card">
+                                <div class="program__card--img"><img src="resources/pictures/program/pexels-mart-production-8032778%201.png"></div>
+                                <div class="program__card--title">Full Body Workout</div>
+                                <div class="program__card--author">By The Rock</div>
+                                <div class="program__card--description">You can do it in your own home, all in under 30 mins? just need a mat and som . . .</div>
+                                <a class="program__card--link" href="https://youtu.be/9kCzsi-VP3s?si=3gtawXuck4paREV-">
+                                    <p>Check out this program!</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M-0.000213134 10.8333L14.6548 10.8333L10.2439 15.2442L11.4223 16.4225L17.8448 9.99999L11.4223 3.57749L10.2439 4.75582L14.6548 9.16665L-0.000212989 9.16665L-0.000213134 10.8333Z" fill="#3043A9"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="swiper-slide program__slider--card">
+                                <div class="program__card--img"><img src="resources/pictures/program/pexels-julia-larson-6456133%201.png"></div>
+                                <div class="program__card--title">Full Body Workout</div>
+                                <div class="program__card--author">By The Rock</div>
+                                <div class="program__card--description">You can do it in your own home, all in under 30 mins? just need a mat and som . . .</div>
+                                <a class="program__card--link" href="https://youtu.be/9kCzsi-VP3s?si=3gtawXuck4paREV-">
+                                    <p>Check out this program!</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M-0.000213134 10.8333L14.6548 10.8333L10.2439 15.2442L11.4223 16.4225L17.8448 9.99999L11.4223 3.57749L10.2439 4.75582L14.6548 9.16665L-0.000212989 9.16665L-0.000213134 10.8333Z" fill="#3043A9"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="swiper-slide program__slider--card">
+                                <div class="program__card--img"><img src="resources/pictures/program/pexels-mart-production-8033089%201.png"></div>
+                                <div class="program__card--title">Full Body Workout</div>
+                                <div class="program__card--author">By The Rock</div>
+                                <div class="program__card--description">You can do it in your own home, all in under 30 mins? just need a mat and som . . .</div>
+                                <a class="program__card--link" href="https://youtu.be/9kCzsi-VP3s?si=3gtawXuck4paREV-">
+                                    <p>Check out this program!</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M-0.000213134 10.8333L14.6548 10.8333L10.2439 15.2442L11.4223 16.4225L17.8448 9.99999L11.4223 3.57749L10.2439 4.75582L14.6548 9.16665L-0.000212989 9.16665L-0.000213134 10.8333Z" fill="#3043A9"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="program__slider--buttons">
+                            <div class="swiper-button-prev program__slider--prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                                    <path d="M31.5 11.25L20.25 22.5L31.5 33.75L29.25 38.25L13.5 22.5L29.25 6.75L31.5 11.25Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="swiper-button-next program__slider--next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                                    <path d="M13.5 33.75L24.75 22.5L13.5 11.25L15.75 6.75L31.5 22.5L15.75 38.25L13.5 33.75Z" fill="black"/>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-
-                    <video class="video-js" id="video-1" controls preload="auto" poster="/resources/pictures/header/pexels-mart-production-8033013%201.png">
-                        <source src="resources/video/очень%20важно.mp4">
-                    </video>
                 </div>
             </div>
         </section>
-
     </main>
     <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

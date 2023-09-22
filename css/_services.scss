@@ -1,0 +1,94 @@
+.program {
+  background-color: #FFFFFF;
+}
+
+.program {
+  padding: 10rem 0;
+}
+
+.program__description {
+  color: #222;
+  text-align: center;
+  font-family: Nekst-Bold;
+  font-size: 4rem;
+  font-style: normal;
+  line-height: 150%; /* 60px */
+  text-transform: capitalize;
+  width: 60rem;
+}
+
+.program__title {
+  color: #262626;
+  text-align: center;
+  font-family: Nekst-Medium;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: normal;
+  margin: 1rem 0;
+}
+
+.services__inner {
+  @include center;
+  flex-direction: column;
+}
+
+.program__card--title {
+  color: #222;
+  font-family: Nekst-Medium;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 4.5rem;
+}
+
+.program__card--author {
+  color: #222;
+  font-family: Nekst-Regular;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+
+.program__card--description {
+  color: #4B4B4B;
+  font-family: Nekst-Light;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 185%; /* 185.714% */
+}
+
+.program__slider--card {
+  color: #222;
+  width: 35rem;
+  height: fit-content;
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.program__card--link {
+  width: fit-content;
+  color: #3043A9;
+  font-family: Nekst-Regular;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  display: flex;
+  align-items: center;
+  p {
+    margin-right: 1rem;
+    transition: margin-right .2s;
+  }
+  &:hover {
+    @include underScale(#3043A9);
+
+    p {
+      margin-right: 2rem;
+      transition: margin-right .2s;
+    }
+  }
+}

@@ -65,7 +65,6 @@
     .vjs-big-play-button {
       background: #000000 url("../resources/pictures/header/play.svg") no-repeat center center;
     }
-
   }
 }
 
@@ -78,6 +77,12 @@
   .video-js .vjs-big-play-button {
     margin-left: 0;
     left: 45%;
+  }
+}
+
+@include mini-tablet {
+  .header {
+    padding: 2rem 0;
   }
 }
 

@@ -10,14 +10,14 @@
   align-items: center;
 }
 
-@mixin underScale {
+@mixin underScale($color: #fff) {
   position: relative;
   &::before {
     content: "";
     position: absolute;
     width: 0%;
     height: 1px;
-    background-color: white;
+    background-color: $color;
     bottom: 0;
     border-radius: 2px;
     transition: all 0.2s ease-out;
@@ -80,5 +80,5 @@ header {
 
 .container {
   max-width: 140rem;
-  margin: 0 auto;
+  margin: 0 9rem;
 }
