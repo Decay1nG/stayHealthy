@@ -76,9 +76,15 @@ header {
 .header__container {
   max-width: 111rem;
   margin: 0 auto;
+  height: 100%;
 }
 
 .container {
   max-width: 140rem;
   margin: 0 9rem;
+}
+
+.container__slider--special {
+    max-width: 1400px;
+    margin: 0 90px;
 }

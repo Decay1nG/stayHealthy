@@ -1,0 +1,98 @@
+.nutrition {
+  background-color: #fff;
+  color: #222;
+  padding: 10rem 0;
+}
+
+.nutrition__title {
+  color: #222;
+  font-family: Nekst-Regular;
+  font-size: 1.4rem;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.nutrition__subtitle {
+  color: #161D2F;
+  font-family: Nekst-Bold;
+  font-size: 4.0rem;
+  font-style: normal;
+  line-height: 150%; /* 60px */
+  text-transform: capitalize;
+  margin: 1rem 0;
+}
+
+.nutrition__description {
+  color: #222;
+  font-family: Nekst-Light;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 3rem; /* 200% */
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+
+  span {
+    font-family: Nekst-Bold;
+  }
+}
+
+.nutrition__button {
+  color: #fff;
+}
+
+.nutrition__inner {
+  @include between;
+}
+
+.nutrition__img-box {
+  width: 60.5rem;
+  height: 48.4rem;
+  position: relative;
+
+  img:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  img:nth-child(3) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.nutrition__content-box {
+  width: 44.5rem;
+}
+
+.nutrition__img--decorate {
+  &:first-child {
+    left: 0;
+    top: 0;
+  }
+
+  &:last-child {
+    right: 0;
+    bottom: 0;
+  }
+  position: absolute;
+  background-color: #161D2F;
+  color: #fff;
+  @include center;
+  padding: 1.5rem 3.7rem;
+  z-index: 2;
+  p {
+    margin-left: 4px;
+    font-family: Nekst-Regular;
+    font-size: 1.8rem;
+    font-style: normal;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+  border-radius: 10px;
+}
+
